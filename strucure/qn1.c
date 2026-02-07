@@ -4,19 +4,17 @@
 #include<string.h>
 struct book{
     char name[30], author[20],publisher[30];
-
-
 };
 int main(){
 int i;
-struct book b[5];
+struct book b[50];
 printf("Enter the name, author and publisher of the book\n");
-for(i=0;i<5;i++){
+for(i=0;i<50;i++){
     scanf("%s%s%s",b[i].name,b[i].author,b[i].publisher);
 }
 printf("Details of book by XYZ publisher are\n");
 printf("Name\t Author\t Publisher\n");
-for(i=0;i<5;i++){
+for(i=0;i<50;i++){
         strlwr(b[i].publisher);
     if(strcmp(b[i].publisher, "xyz") == 0){
     printf("%s\t%s\t%s\n",b[i].name,b[i].author,b[i].publisher);
@@ -25,3 +23,4 @@ for(i=0;i<5;i++){
 getch();
 return 0;
 }
+
