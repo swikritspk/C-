@@ -20,5 +20,8 @@ scanf("%s%f%s",b[i].name,&b[i].price,b[i].auth);
             printf("%s",b[i].auth);
          }
         }
+        getch();
+        return 0;
 }
+
 
